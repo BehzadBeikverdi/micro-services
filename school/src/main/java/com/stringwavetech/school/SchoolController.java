@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/schools")
@@ -27,4 +28,10 @@ public class SchoolController {
         return ResponseEntity.ok(service.findAllSchools());
     }
 
+    @GetMapping("/with-students/{school-id}")
+    public ResponseEntity<FullSchoolResponse> findAllSchools(
+            @PathVariable("school-id") UUID schoolId
+    ) {
+        return ResponseEntity.ok(service.findSchoolsWithStudents(schoolId));
+    }
 }

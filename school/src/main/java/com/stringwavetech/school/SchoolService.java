@@ -9,4 +9,5 @@ public interface SchoolService {
 
     List<SchoolEntity> findAllSchools();
 
+    FullSchoolResponse findSchoolsWithStudents(UUID schoolId);
 }

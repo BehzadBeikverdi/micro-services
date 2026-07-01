@@ -1,4 +1,4 @@
-package com.stringwavetech.student;
+package com.stringwavetech.school.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -31,16 +31,16 @@ public class SwaggerConfig {
                 )
                 // --- API general info ---
                 .info(new Info()
-                                .title("Students Service")
+                                .title("Schools Service")
                                 .version("1.0.0")
                                 .description("""
-                                        Students service by BehzaDevStack
+                                        Schools service by BehzaDevStack
                                         
                                         Contacts:
                                         - [Behzad Beikverdi - Fullstack-Devloper](mailto:behzadevstack@gmail.com)
                                         """)
                 ).addServersItem(new Server()
-                        .url("http://localhost:8090")
+                        .url("http://localhost:8022")
                         .description("Dev")
                 );
 

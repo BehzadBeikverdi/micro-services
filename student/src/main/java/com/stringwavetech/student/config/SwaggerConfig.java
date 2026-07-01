@@ -40,7 +40,7 @@ public class SwaggerConfig {
                                         - [Behzad Beikverdi - Fullstack-Devloper](mailto:behzadevstack@gmail.com)
                                         """)
                 ).addServersItem(new Server()
-                        .url("http://localhost:8022")
+                        .url("http://localhost:8222")
                         .description("Dev")
                 );
 
